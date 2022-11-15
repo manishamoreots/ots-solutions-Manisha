@@ -1,37 +1,40 @@
-
 // Memorizad Sum of Numbers
-function sumofNumbers() {
-  let cache = {};
-  return function (x, y) {
-    if (cache[(x, y)]) {
-      console.log(`Already calculated sum: ${x} ${y}`);
-      return cache[(x, y)];
-    }
-    console.log(`Sum of ${x} ${y} is:`);
-    const result = x + y;
-    cache[(x, y)] = result;
-    console.log(result);
-  };
-}
-const memorized = sumofNumbers();
-memorized(4, 5);
-memorized(16, 10);
-memorized(4, 5);
+// function sumofNumbers() {
+//   let cache = {};
+//   return function (x, y) {
+//     if (cache[(x, y)]) {
+//       console.log(`Already calculated sum: ${x} ${y}`);
+//       return cache[(x, y)];
+//     }
+//     console.log(`Sum of ${x} ${y} is:`);
+//     const result = x + y;
+//     cache[(x, y)] = result;
+//     console.log(result);
+//   };
+// }
+// const memorized = sumofNumbers();
+// memorized(4, 5);
+// memorized(16, 10);
+// memorized(4, 5);
 
-function cube() {
-  let cache = {};
-  return function (x) {
-    if (cache[x]) {
-      console.log(`Already calculated cube: ${x}`);
-      return cache[x];
+//function currying
+
+// Read about Function Currying & Create a Program to print list of names.
+// Example -
+// printList("Akshay")("Khurana")("Manisha")("Rahul") -
+// Output - Names are -  Akshay, Khurana, Manisha, Rahul
+
+function outer() {
+let result=[];
+  return function listOfNames(x) {
+    if (!x) {
+      return result;
     }
-    console.log(`calculated cube: ${x}`);
-    const result = Math.pow(x, 3);
-    cache[x] = result;
-    console.log(result);
+    result = result + " " + x;
+     return listOfNames;
+
   };
 }
-const memoized1 = cube();
-memoized1(4);
-memoized1(8);
-memoized1(4);
+
+const listOfNames = outer();
+console.log(listOfNames("Names are -")("Akshay,")("Khurana,")("Manisha,")("Rahul")());
