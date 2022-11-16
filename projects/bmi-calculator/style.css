@@ -1,0 +1,32 @@
+
+.hero-container{
+    border: 2px solid rgb(237, 151, 151);
+    height: 310px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    
+}
+.heading{
+    color: rgb(5, 5, 128);
+   
+}
+.calculate-button{
+    height: 35px;
+    width: 75px;   
+}
+.calculate-button:hover{
+   background-color: rgb(51, 100, 192);
+   color: white;
+}
+.Result-Section{
+    margin-top: 10px;
+    /* float: left;
+    padding-left: 5px; */
+}
+.form{
+  
+    border-bottom: 2px double grey;
+    padding-bottom: 25px;
+}

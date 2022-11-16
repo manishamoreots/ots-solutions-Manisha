@@ -5,8 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
 </head>
 <body>
-    <h2>Ots Solutions</h2>
+    <div class="hero-container">
+        <form class="form">
+        
+        <h2 class="heading">BMI Calculator</h2>
+
+        <label for="" id="" class="">Height (in meters): </label>
+        <input type="text" id="height" class="height" autocomplete="off"><br/><br/>
+
+        <label for="" id="">Weight (in k/gram): </label>
+        <input type="text" id="weight" class="weight" autocomplete="off"><br/><br/>
+        
+        <button type="reset" id="calculate-button" class="calculate-button"  value="submit" onclick="calculate()">Calculate</button>
+        </form>
+
+        <div class="Result-Section">
+         <p ><strong>Current BMI :</strong><span id="calculated-result"></span></p>
+        <p class="result"><strong>Previous BMI Results : </strong> <br/></p> <span id="result"></span></p> 
+        
+        </div>
+          
+    </div>
+       
+    
 </body>
 </html>
