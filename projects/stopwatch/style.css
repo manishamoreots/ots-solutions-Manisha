@@ -1,0 +1,44 @@
+body {
+  background-color:#021720;
+}
+.Heading {
+  color: crimson;
+}
+.hero-container {
+  height: 170px;
+  width: 760px;
+  border: 1.2px solid cyan;
+  text-align: center;
+  margin: 200px auto;
+}
+.start-button,
+.stop-button,
+.reset-button {
+  height: 35px;
+  width: 80px;
+  border-radius: 5px rgb(145, 234, 187);
+  margin-inline-start: 10px;
+  font-size: medium;
+  
+}
+.content {
+  color: aquamarine;
+}
+#min,
+#sec {
+  font-size: x-large;
+}
+.start-button:hover {
+  background-color: rgb(24, 122, 29);
+  color: white;
+}
+
+.stop-button:hover {
+  background-color: rgb(250, 119, 54);
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: red;
+  color: white;
+}

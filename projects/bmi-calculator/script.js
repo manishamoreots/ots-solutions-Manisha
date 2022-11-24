@@ -5,13 +5,14 @@ function calculate() {
   var weight = document.getElementById("weight").value;
 
   var result = (weight / (height * height)).toFixed(2);
+  document.getElementById("calculated-result").innerHTML="BMI : " + result;
+   BmiResults.push(" "+ result);
+ 
     
   document.getElementById("result").innerHTML = BmiResults;
   console.log(BmiResults);
 
-  document.getElementById("calculated-result").innerHTML=result;
-   BmiResults.push(result);
- 
+  
 
   if (height <= 0 || weight <= 0) {
     alert("Please provide valid Number!!!");
@@ -19,11 +20,11 @@ function calculate() {
   }
 
   if(result<18.5){
-    alert("You are Under Weight");
+    document.getElementById("current-status").innerHTML = "You are in Under Weight";
   }else if(result>18.5 || result <24.9){
-    alert("You are Healthy Weight");
-  }else if(result>24.9){
-    alert("You are Over weight")
+    document.getElementById("current-status").innerHTML = "You are in Healthy  Weight";
+    }else if(result>24.9){
+      document.getElementById("current-status").innerHTML = "You are in Over  Weight";
   }
   if (BmiResults.length == 10) {
     BmiResults.shift();

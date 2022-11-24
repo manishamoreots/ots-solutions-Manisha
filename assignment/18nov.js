@@ -30,23 +30,23 @@
 
 // //task 2
 
-// // const arr = [[1, 2], [2, 4, [5, 6, [2, 4]]], 8, 9];
-// // create a fucntion to flat the array => [1,2,2,4,5,6,2,4,8,9]
+// const arr = [[1, 2], [2, 4, [5, 6, [2, 4]]], 8, 9];
+// create a fucntion to flat the array => [1,2,2,4,5,6,2,4,8,9]
 
-// function arrayOuter() {
-//   let result = [];
+function arrayOuter() {
+  let result = [];
 
-//   return function flatArray(arr) {
-//     if (arr == 0) {
-//       return result;
-//     } else {
-//       finalflatArray1 = [].concat.apply([], arr);
-//       return finalflatArray1;
-//     }
-//   };
-// }
-// let finalflatArray1 = arrayOuter();
-// console.log(finalflatArray1([[1, 2], [2, 4, [5, 6, [2, 4]]], 8, 9]));
+  return function flatArray(arr) {
+    if (arr == 0) {
+      return result;
+    } else {
+      finalflatArray1 = [].concat.apply([], arr);
+      return finalflatArray1;
+    }
+  };
+}
+let finalflatArray1 = arrayOuter();
+console.log(finalflatArray1([[1, 2], [2, 4, [5, 6, [2, 4]]], 8, 9]));
 
 // //---------------------------------------------------------
 
@@ -55,22 +55,22 @@
 // // b = [{name: 'abcd'},{name:'abdc'}, {name:'kjdshck}, {name: 'Akshay'}, {name: 'akshay'}, {name:'AMit'}]
 // // result = [{name: 'Akshay'}, {name: 'akshay'}, {name:'AMit'}]
 
-// const array = [{ name: "amit" }, { name: "Akshay" }];
+const array = [{ name: "amit" }, { name: "Akshay" }];
 
-// const anotherArray = [
-//   { name: "Deepa" },
-//   { name: "John" },
-//   { name: "krisha" },
-//   { name: "Akshay" },
-//   { name: "akshay" },
-//   { name: "AMit" },
-// ];
+const anotherArray = [
+  { name: "Deepa" },
+  { name: "John" },
+  { name: "krisha" },
+  { name: "Akshay" },
+  { name: "akshay" },
+  { name: "AMit" },
+];
 
-// const FinalArray = anotherArray.filter((elem) =>
-//   array.find(({ name }) => elem.name.toLowerCase() == name.toLowerCase())
-// );
+const FinalArray = anotherArray.filter((elem) =>
+  array.find(({ name }) => elem.name.toLowerCase() == name.toLowerCase())
+);
 
-// console.log(FinalArray);
+console.log(FinalArray);
 
 // //===============
 
