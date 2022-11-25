@@ -1,0 +1,22 @@
+.heading {
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(255, 8, 90);
+}
+.hero-container {
+  width: 500px;
+  border: 2px solid grey;
+  margin: 50px auto;
+}
+.sub-container {
+  height: 250px;
+  width: 450px;
+  text-align: center;
+  margin-top: 20px auto;
+}
+p {
+  padding: 20px;
+  width: 180px;
+  margin-left: 150px;
+  color: white;
+}
