@@ -1,0 +1,46 @@
+.hero-container {
+  background-color: rgb(247, 184, 47);
+  height: 400px;
+  width: 700px;
+  text-align: center;
+  margin: 90px auto;
+}
+.heading {
+  margin-top: 10px;
+  padding-top: 25px;
+}
+.sub-container {
+  padding-top: 50px;
+}
+ul {
+  list-style-type: none;
+  font-size: x-large;
+  float:inline-start;
+
+}
+span {
+  background-color: red;
+  margin-left: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  padding: 1px auto;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+input {
+  height: 30px;
+  width: 190px;
+  font-size: large;
+}
+button {
+  height: 30px;
+  width: 70px;
+  margin-inline-start: 10px;
+  border-radius: 5px;
+}
+li {
+  flex-direction: column;
+  padding-top: 5px;
+  /* align-self: flex-start; */
+}

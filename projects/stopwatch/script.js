@@ -1,5 +1,5 @@
-var min = 0;
-var sec = 0;
+var min = 00;
+var sec = 00;
 var Timer;
 document.getElementById("stop-button").disabled = true;
 
@@ -21,8 +21,8 @@ function stop() {
 }
 function reset() {
   clearInterval(Timer);
-  min = 0;
-  sec = 0;
+  min = 00;
+  sec = 00;
   document.getElementById("minutes").innerHTML = min;
   document.getElementById("seconds").innerHTML = sec;
 }

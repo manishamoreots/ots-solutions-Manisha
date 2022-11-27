@@ -19,6 +19,7 @@ body {
   border-radius: 5px rgb(145, 234, 187);
   margin-inline-start: 10px;
   font-size: medium;
+  cursor: pointer;
   
 }
 .content {
