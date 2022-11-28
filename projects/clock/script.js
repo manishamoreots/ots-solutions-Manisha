@@ -3,10 +3,11 @@ setInterval(function clockFun() {
   var hours = currrent_date.getHours();
 
   if (hours >= 12) {
-    hours = hours - 12;
+    // hours = hours - 12;
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("status").innerHTML = "PM";
-  } else {
+  } 
+  else {
     document.getElementById("status").innerHTML = "AM";
   }
 

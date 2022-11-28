@@ -12,7 +12,7 @@ addbutton.addEventListener("click", function () {
     list.appendChild(listItem);
 
     var DeleteListItem = document.createElement("span");
-    DeleteListItem.innerText = "x";
+    DeleteListItem.innerText = "X";
     listItem.appendChild(DeleteListItem);
 
     DeleteListItem.addEventListener("click", function () {
@@ -37,10 +37,10 @@ var persistbutton = document.getElementById("persist-button");
 persistbutton.addEventListener("click", function () {
   for (i = 0; i <= sessionStorage.length; i++) {
     let data = sessionStorage.getItem(i);
-
+  
     var listItemSessionData = document.createElement("li");
     list.appendChild(listItemSessionData);
     listItemSessionData.innerText = data;
-    console.log(data);
+    // console.log(data);
   }
 });

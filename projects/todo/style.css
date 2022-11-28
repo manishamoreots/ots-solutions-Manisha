@@ -15,29 +15,29 @@
 ul {
   list-style-type: none;
   font-size: x-large;
-  float:inline-start;
-
+  float: inline-start;
 }
 span {
   background-color: red;
   margin-left: 10px;
   display: inline-block;
   text-align: center;
-  width: 50px;
+  width: 40px;
   padding: 1px auto;
-  border: 2px solid black;
-  border-radius: 50px;
+  border: 1.5px dotted black;
+  cursor: pointer;
 }
 input {
   height: 30px;
   width: 190px;
-  font-size: large;
+  /* font-size: large; */
 }
 button {
   height: 30px;
   width: 70px;
   margin-inline-start: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 li {
   flex-direction: column;

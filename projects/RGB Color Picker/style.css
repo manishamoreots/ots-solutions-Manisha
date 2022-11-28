@@ -20,3 +20,6 @@ p {
   margin-left: 150px;
   color: white;
 }
+input{
+  cursor: pointer;
+}
