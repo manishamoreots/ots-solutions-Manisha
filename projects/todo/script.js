@@ -21,10 +21,9 @@ addbutton.addEventListener("click", function () {
 
     array.push(UserInput);
     console.log(array);
-    var i;
-    for (i = 0; i < array.length; i++) {}
-    console.log(i);
-    sessionStorage.setItem(i, UserInput);
+
+    //  sessionStorage.setItem(i, UserInput);
+    localStorage.setItem("task", JSON.stringify(array));
   }
 });
 
@@ -35,12 +34,16 @@ clearbutton.addEventListener("click", function () {
 
 var persistbutton = document.getElementById("persist-button");
 persistbutton.addEventListener("click", function () {
-  for (i = 0; i <= sessionStorage.length; i++) {
-    let data = sessionStorage.getItem(i);
-  
+  let data = JSON.parse(localStorage.getItem("task"));
+  // console.log(data);
+  array = [...data];
+  for (let i = 0; i < data.length; i++) {
+    // let ul = document.querySelector("ul");
+    // let li = document.createElement("li");
+    // li.innerText = data[i];
+    // ul.appendChild(li);
     var listItemSessionData = document.createElement("li");
+    listItemSessionData.innerText = data[i];
     list.appendChild(listItemSessionData);
-    listItemSessionData.innerText = data;
-    // console.log(data);
   }
 });

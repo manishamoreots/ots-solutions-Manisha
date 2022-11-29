@@ -22,13 +22,11 @@ body {
   cursor: pointer;
   
 }
-.content {
+#time {
   color: aquamarine;
+  font-size: larger;
 }
-#min,
-#sec {
-  font-size: x-large;
-}
+
 .start-button:hover {
   background-color: rgb(24, 122, 29);
   color: white;

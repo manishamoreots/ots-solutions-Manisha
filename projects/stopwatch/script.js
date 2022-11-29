@@ -1,33 +1,50 @@
-var min = 0;
-var sec = 0;
-var Timer;
-document.getElementById("stop-button").disabled = true;
 
-var startTimer = () => {
-  sec++;
-  document.getElementById("seconds").innerHTML = sec;
+let startbtn = document.getElementById("start-button");
+let stopbtn = document.getElementById("stop-button");
+let resetbtn = document.getElementById("reset-button");
+stopbtn.disabled = true;
 
-  if (sec >= 59) {
-    min = min + 1;
-    document.getElementById("minutes").innerHTML = min;
-    sec = 0;
-  }
-  
-};
+let min = 00;
+let sec = 00;
 
-function start() {
-  Timer = setInterval(startTimer, 1000);
+startbtn.addEventListener("click", function () {
+  timer = true;
+  startTimer();
   document.getElementById("stop-button").disabled = false;
-}
+});
 
-function stop() {
-  clearInterval(Timer);
-}
+stopbtn.addEventListener("click", function () {
+  timer = false;
+});
 
-function reset() {
-  clearInterval(Timer);
+resetbtn.addEventListener("click", function () {
+  timer = false;
   min = 0;
   sec = 0;
   document.getElementById("minutes").innerHTML = min;
   document.getElementById("seconds").innerHTML = sec;
+});
+
+function startTimer() {
+  if (timer) {
+    sec++;
+  }
+  if (sec == 60) {
+    min++;
+    sec = 0;
+  }
+  let minutes = min;
+  let seconds = sec;
+
+  if (min < 10) {
+    minutes = "0" + minutes;
+  }
+
+  if (sec < 10) {
+    seconds = "0" + seconds;
+  }
+
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+  setTimeout(startTimer, 1000);
 }
