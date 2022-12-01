@@ -1,0 +1,24 @@
+.hero-container{
+    border: 2px solid red;
+    height: 15vh;
+}
+.sub-container{
+    border: 2px solid green;
+    height: 20vh;
+    
+}
+.common{
+    border: 2px solid rgb(112, 6, 59);
+    height: 40vh;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.left, .right{
+    
+    border: 2px solid rgb(27, 199, 218);
+
+}
+.footer-container{
+    border:2px solid blue;
+    height: 20vh;
+}

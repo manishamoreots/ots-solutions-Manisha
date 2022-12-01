@@ -1,0 +1,18 @@
+/* *{
+    margin: 10px;
+    
+} */
+.image-area{
+    width: 100%;
+    /* height: auto; */
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap;    */
+
+}
+.single-img{
+    height: 70px;
+    width: 90px;
+    /* margin: 10px; */
+    padding: 5px;
+}
