@@ -1,11 +1,10 @@
 import "./App.css";
-import InputList from "./components/input";
+import ParentForm from "./components/parentInput";
 
 function App() {
- 
-  return(
+  return (
     <div className="App">
-      <InputList/>
+     <ParentForm />
     </div>
   );
 }

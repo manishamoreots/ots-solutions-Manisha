@@ -1,9 +1,11 @@
 import React from "react";
 
-const List = () => {
+const List = ({ arr }) => {
   return (
-    <div style={{color:"green",width:100}}>
-      <ul id="List"></ul>
+    <div style={{ color: "green", width: 100 }}>
+      {arr.map((i) => (
+        <li>{i}</li>
+      ))}
     </div>
   );
 };
